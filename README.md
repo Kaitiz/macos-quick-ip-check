@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Kaitiz/quick-ip-check/releases/latest"><b>⬇ Download / Tải về</b></a>
+  <a href="https://github.com/Kaitiz/macos-quick-ip-check/releases/latest"><b>⬇ Download / Tải về</b></a>
   · macOS 13+ · Apple Silicon & Intel
 </p>
 
@@ -45,7 +45,7 @@
 
 ### Install
 
-1. Download the latest `.dmg` from [Releases](https://github.com/Kaitiz/quick-ip-check/releases/latest).
+1. Download the latest `.dmg` from [Releases](https://github.com/Kaitiz/macos-quick-ip-check/releases/latest).
 2. Open it and drag **Quick IP Check** into **Applications**.
 3. Open the app from Applications. It lives in the menu bar (no Dock icon).
 
@@ -107,7 +107,7 @@ Contact: [contact@lelong.dev](mailto:contact@lelong.dev)
 
 ### Cài đặt
 
-1. Tải file `.dmg` mới nhất tại [Releases](https://github.com/Kaitiz/quick-ip-check/releases/latest).
+1. Tải file `.dmg` mới nhất tại [Releases](https://github.com/Kaitiz/macos-quick-ip-check/releases/latest).
 2. Mở file, kéo **Quick IP Check** vào thư mục **Applications**.
 3. Mở app từ Applications. App nằm trên thanh menu, không có biểu tượng ở Dock.
 
