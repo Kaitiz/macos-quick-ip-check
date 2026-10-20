@@ -5,6 +5,7 @@
 - With a VPN, the menu bar now shows only the current public (VPN) IP. Choose "ISP IP → VPN IP" in Settings → Display to show both.
 - Fixed typing a check interval (e.g. "10" turned into "50").
 - Fixed the ISP IP shrinking and growing in the overview while a VPN is on.
+- Fixed the "VPN blocks all traffic outside the tunnel" note appearing and disappearing while a VPN is on.
 
 ## 1.3 — 2026-10-21
 
