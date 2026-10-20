@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5 — 2026-10-21
+
+- History marks IPs that came through a VPN with a "VPN" tag, also exported as a VPN column in CSV.
+- Identifies the VPN in use: its name (e.g. NordVPN, ProtonVPN) and Tailscale exit nodes, with the exit node's name. Both can be turned off in Settings → Display.
+
 ## 1.4 — 2026-10-21
 
 - With a VPN, the menu bar now shows only the current public (VPN) IP. Choose "ISP IP → VPN IP" in Settings → Display to show both.

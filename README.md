@@ -28,9 +28,9 @@
 ### Features
 
 - **Menu bar at a glance** — shows `ISP · IP`, e.g. `VNPT · 203.0.113.45`.
-- **VPN aware** — when a VPN is on, the menu bar shows your current public (VPN) IP, or `ISP → VPN` if you prefer; the overview shows both the VPN IP and your original ISP IP, even with VPNs that block traffic outside the tunnel.
+- **VPN aware** — when a VPN is on, the menu bar shows your current public (VPN) IP, or `ISP → VPN` if you prefer; the overview shows both the VPN IP and your original ISP IP, even with VPNs that block traffic outside the tunnel. It can name the VPN in use (e.g. NordVPN, ProtonVPN) and recognise Tailscale exit nodes.
 - **Instant re-check** — detects when the network drops and comes back (or the Mac wakes) and checks right away; otherwise checks every 3 minutes (adjustable).
-- **IP history** — recorded only when your IP changes, grouped by day, with how long each IP was used. Auto-cleanup after 6 h – 1 month and an optional entry limit. Export to CSV.
+- **IP history** — recorded only when your IP changes, grouped by day, with how long each IP was used and whether it came through a VPN. Auto-cleanup after 6 h – 1 month and an optional entry limit. Export to CSV.
 - **Returning IP** — tells you when you get an IP you used before (A → B → C → A), in the popup and on the overview.
 - **Change popup** — a small notification when your IP changes, for 1–5 seconds, top left / center / right.
 - **IP reputation** — risk score from proxycheck.io, fFraud, ip-api.com or StopForumSpam (no key needed), or AbuseIPDB and IPQualityScore (free API key).
@@ -98,9 +98,9 @@ Contact: [contact@lelong.dev](mailto:contact@lelong.dev)
 ### Tính năng
 
 - **Xem nhanh trên thanh menu**: hiện `Nhà mạng · IP`, ví dụ `VNPT · 203.0.113.45`.
-- **Nhận biết VPN**: khi bật VPN, thanh menu hiện IP công khai hiện tại (IP VPN), hoặc `Nhà mạng → VPN` nếu bạn muốn; mục Tổng quan hiện cả IP VPN lẫn IP nhà mạng gốc, kể cả với VPN chặn mọi kết nối ngoài đường hầm.
+- **Nhận biết VPN**: khi bật VPN, thanh menu hiện IP công khai hiện tại (IP VPN), hoặc `Nhà mạng → VPN` nếu bạn muốn; mục Tổng quan hiện cả IP VPN lẫn IP nhà mạng gốc, kể cả với VPN chặn mọi kết nối ngoài đường hầm. App nhận ra tên VPN đang dùng (ví dụ NordVPN, ProtonVPN) và Tailscale Exit Node.
 - **Kiểm tra lại ngay**: phát hiện khi mất mạng rồi có mạng lại (hoặc khi Mac thức dậy) và kiểm tra ngay; ngoài ra kiểm tra định kỳ 3 phút một lần (có thể chỉnh).
-- **Lịch sử IP**: chỉ ghi khi IP thay đổi, nhóm theo ngày, kèm thời gian sử dụng từng IP. Tự xóa sau 6 giờ đến 1 tháng, có thể giới hạn số bản ghi. Xuất ra CSV.
+- **Lịch sử IP**: chỉ ghi khi IP thay đổi, nhóm theo ngày, kèm thời gian sử dụng từng IP và có đi qua VPN hay không. Tự xóa sau 6 giờ đến 1 tháng, có thể giới hạn số bản ghi. Xuất ra CSV.
 - **IP quay lại**: báo khi bạn nhận lại một IP đã từng dùng (A → B → C → A), trong popup và ở mục Tổng quan.
 - **Popup khi đổi IP**: thông báo nhỏ hiện 1–5 giây, ở góc trên bên trái, giữa hoặc bên phải.
 - **Độ tin cậy IP**: điểm rủi ro từ proxycheck.io, fFraud, ip-api.com hoặc StopForumSpam (không cần key), hoặc AbuseIPDB và IPQualityScore (API key miễn phí).
