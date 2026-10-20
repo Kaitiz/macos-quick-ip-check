@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1 — 2026-10-21
+
+- Main window: open Quick IP Check like a regular app ("Open Window" in the menu bar panel, or the right-click menu), with the overview, today's stats, a 7-day chart of IP changes, and a searchable, filterable history table side by side. While it's open the app appears in the Dock.
+- Shorter menu bar: show the IP in full, as "203…45", "113.45" or just "45", and the ISP by name or initials. Settings → Display.
+- Pauses checking while the Mac sleeps or the screen is locked, and checks right away when you're back (Settings → General, on by default).
+- Redesigned Settings with a sidebar, clearer grouping (new VPN page) and a live menu bar preview.
+- The status label names the connection, e.g. "Wi-Fi · Connected" or "Ethernet · Connected".
+
 ## 1.5 — 2026-10-21
 
 - History marks IPs that came through a VPN with a "VPN" tag, also exported as a VPN column in CSV.
