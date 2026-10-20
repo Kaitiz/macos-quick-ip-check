@@ -30,7 +30,7 @@
 - **Menu bar at a glance** — shows `ISP · IP`, e.g. `VNPT · 203.0.113.45`.
 - **VPN aware** — when a VPN is on, shows both the VPN IP and your original ISP IP.
 - **Instant re-check** — detects when the network drops and comes back (or the Mac wakes) and checks right away; otherwise checks every 3 minutes (adjustable).
-- **IP history** — recorded only when your IP changes, grouped by day, with how long each IP was used. Auto-cleanup after 6 h – 1 month. Export to CSV.
+- **IP history** — recorded only when your IP changes, grouped by day, with how long each IP was used. Auto-cleanup after 6 h – 1 month and an optional entry limit. Export to CSV.
 - **Returning IP** — tells you when you get an IP you used before (A → B → C → A), in the popup and on the overview.
 - **Change popup** — a small notification when your IP changes, for 1–5 seconds, top left / center / right.
 - **IP reputation** — risk score from proxycheck.io (no key needed), AbuseIPDB or IPQualityScore (free API key).
@@ -97,7 +97,7 @@ Contact: [contact@lelong.dev](mailto:contact@lelong.dev)
 - **Xem nhanh trên thanh menu**: hiện `Nhà mạng · IP`, ví dụ `VNPT · 203.0.113.45`.
 - **Nhận biết VPN**: khi bật VPN, hiện cả IP của VPN và IP của nhà mạng gốc.
 - **Kiểm tra lại ngay**: phát hiện khi mất mạng rồi có mạng lại (hoặc khi Mac thức dậy) và kiểm tra ngay; ngoài ra kiểm tra định kỳ 3 phút một lần (có thể chỉnh).
-- **Lịch sử IP**: chỉ ghi khi IP thay đổi, nhóm theo ngày, kèm thời gian sử dụng từng IP. Tự xóa sau 6 giờ đến 1 tháng. Xuất ra CSV.
+- **Lịch sử IP**: chỉ ghi khi IP thay đổi, nhóm theo ngày, kèm thời gian sử dụng từng IP. Tự xóa sau 6 giờ đến 1 tháng, có thể giới hạn số bản ghi. Xuất ra CSV.
 - **IP quay lại**: báo khi bạn nhận lại một IP đã từng dùng (A → B → C → A), trong popup và ở mục Tổng quan.
 - **Popup khi đổi IP**: thông báo nhỏ hiện 1–5 giây, ở góc trên bên trái, giữa hoặc bên phải.
 - **Độ tin cậy IP**: điểm rủi ro từ proxycheck.io (không cần key), AbuseIPDB hoặc IPQualityScore (API key miễn phí).

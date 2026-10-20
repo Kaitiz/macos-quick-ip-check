@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2 — 2026-10-21
+
+- Set a maximum number of history entries (50, 100, 200, 500, 1,000 or unlimited) in Settings → History, alongside auto-delete. Oldest entries are removed first.
+
 ## 1.1 — 2026-10-21
 
 First public release.
