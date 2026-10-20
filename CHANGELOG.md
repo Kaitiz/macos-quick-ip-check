@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3 — 2026-10-21
+
+- Three more IP reputation services that need no API key: fFraud, ip-api.com and StopForumSpam (Settings → Reputation). proxycheck.io remains the default.
+
 ## 1.2.1 — 2026-10-21
 
 - Fixed VPNs that send all traffic through the tunnel being reported as "split tunnel". When such a VPN hides the ISP IP, the last ISP IP seen before the VPN is shown instead.

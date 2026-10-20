@@ -33,7 +33,7 @@
 - **IP history** — recorded only when your IP changes, grouped by day, with how long each IP was used. Auto-cleanup after 6 h – 1 month and an optional entry limit. Export to CSV.
 - **Returning IP** — tells you when you get an IP you used before (A → B → C → A), in the popup and on the overview.
 - **Change popup** — a small notification when your IP changes, for 1–5 seconds, top left / center / right.
-- **IP reputation** — risk score from proxycheck.io (no key needed), AbuseIPDB or IPQualityScore (free API key).
+- **IP reputation** — risk score from proxycheck.io, fFraud, ip-api.com or StopForumSpam (no key needed), or AbuseIPDB and IPQualityScore (free API key).
 - **Local IPs** — IPv4 / IPv6 per interface (Wi-Fi, Ethernet, VPN…).
 - **One-click updates** — downloads, verifies and installs new versions when you agree.
 - **English & Vietnamese**, light & dark mode, open at login.
@@ -100,7 +100,7 @@ Contact: [contact@lelong.dev](mailto:contact@lelong.dev)
 - **Lịch sử IP**: chỉ ghi khi IP thay đổi, nhóm theo ngày, kèm thời gian sử dụng từng IP. Tự xóa sau 6 giờ đến 1 tháng, có thể giới hạn số bản ghi. Xuất ra CSV.
 - **IP quay lại**: báo khi bạn nhận lại một IP đã từng dùng (A → B → C → A), trong popup và ở mục Tổng quan.
 - **Popup khi đổi IP**: thông báo nhỏ hiện 1–5 giây, ở góc trên bên trái, giữa hoặc bên phải.
-- **Độ tin cậy IP**: điểm rủi ro từ proxycheck.io (không cần key), AbuseIPDB hoặc IPQualityScore (API key miễn phí).
+- **Độ tin cậy IP**: điểm rủi ro từ proxycheck.io, fFraud, ip-api.com hoặc StopForumSpam (không cần key), hoặc AbuseIPDB và IPQualityScore (API key miễn phí).
 - **IP nội bộ**: IPv4 / IPv6 theo từng cổng mạng (Wi-Fi, Ethernet, VPN…).
 - **Cập nhật một chạm**: khi bạn đồng ý, app tự tải, kiểm tra và cài bản mới.
 - **Tiếng Việt & tiếng Anh**, giao diện sáng/tối, chạy cùng macOS.
