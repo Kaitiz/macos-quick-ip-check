@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1 — 2026-10-21
+
+- Fixed VPNs that send all traffic through the tunnel being reported as "split tunnel". When such a VPN hides the ISP IP, the last ISP IP seen before the VPN is shown instead.
+
 ## 1.2 — 2026-10-21
 
 - Set a maximum number of history entries (50, 100, 200, 500, 1,000 or unlimited) in Settings → History, alongside auto-delete. Oldest entries are removed first.
