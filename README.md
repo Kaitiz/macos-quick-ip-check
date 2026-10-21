@@ -26,7 +26,7 @@
 
 ### Features
 
-- **Menu bar at a glance** — shows `ISP · IP`, e.g. `VNPT · 203.0.113.58`. Make it shorter if you like: the IP in full, as `203…58`, `113.58` or just `58`, and the ISP by name or initials. Hover to see the full IP.
+- **Menu bar at a glance** — shows `ISP · IP`, e.g. `VNPT · 203.0.113.58`. Make it shorter if you like: the IP in full, as `203…58`, `113.58` or just `58`, and the ISP by name or initials, or the IP's location instead. Hover to see the full IP.
 - **Main window** — open it like a regular app: the overview, today's stats, a 7-day chart of IP changes, and a searchable history table side by side.
 - **Instant re-check** — notices when the network drops and comes back and checks right away; otherwise every 3 minutes (adjustable). Pauses while the Mac sleeps or the screen is locked.
 - **Connection type** — "Wi-Fi · Connected", "Ethernet · Connected"…
@@ -34,6 +34,7 @@
 - **IP history** — recorded only when your IP changes, with how long each IP was used and whether it came through a VPN. Auto-cleanup after 6 hours to 1 month, optional entry limit, CSV export.
 - **Returning IP** — tells you when you get an IP you used before (A → B → C → A).
 - **Change popup** — a small notification when your IP changes, for 1–5 seconds, top left / center / right.
+- **IP type** — residential, mobile, data center, VPN or Tor.
 - **IP reputation** — risk score from proxycheck.io, fFraud, ip-api.com or StopForumSpam (no key needed), or AbuseIPDB and IPQualityScore (free API key).
 - **Local IPs** — IPv4 / IPv6 per network interface.
 - **One-click updates** — downloads, verifies and installs new versions when you agree.
@@ -68,10 +69,6 @@ You only need to do this once.
 - **Right click**: refresh, copy IP, main window, settings, quit.
 - Shortcuts: `⌘R` refresh · `⌘O` main window · `⌘1` / `⌘2` switch tabs · `⌘,` settings.
 
-### Default settings
-
-Open at login · system language · check every 3 minutes, paused while asleep or locked · full IP with the ISP's main name, no logo · local IPv4 only · 2-second popup at the top center, with returning-IP notes · VPN IP only in the menu bar, VPN and Tailscale detection on · reputation by proxycheck.io, source shown · history kept 7 days, no entry limit · automatic update checks.
-
 ### Privacy
 
 Quick IP Check has no account, no analytics and no server of its own. To do its job it contacts:
@@ -81,6 +78,7 @@ Quick IP Check has no account, no analytics and no server of its own. To do its 
 | Find your public IP | api.ipify.org (fallback: icanhazip.com, checkip.amazonaws.com) | a plain request |
 | ISP and location | ipinfo.io | your public IP |
 | Reputation score (optional) | the service you choose | your public IP, only when it changes |
+| IP type (optional) | ip-api.com, fFraud, proxycheck.io | your public IP, once per new IP |
 | Updates (optional) | api.github.com, github.com | a plain request, once a day; the new version when you choose to update |
 
 VPN detection runs entirely on your Mac. History and settings stay on your Mac (`~/Library/Application Support/IPCheck/`). API keys are stored in the macOS Keychain.
@@ -101,7 +99,7 @@ Contact: [contact@lelong.dev](mailto:contact@lelong.dev)
 
 ### Tính năng
 
-- **Xem nhanh trên thanh menu**: hiện `Nhà mạng · IP`, ví dụ `VNPT · 203.0.113.58`. Có thể rút gọn: IP đầy đủ, dạng `203…58`, `113.58` hoặc chỉ `58`; tên nhà mạng đầy đủ hoặc viết tắt. Rê chuột để xem IP đầy đủ.
+- **Xem nhanh trên thanh menu**: hiện `Nhà mạng · IP`, ví dụ `VNPT · 203.0.113.58`. Có thể rút gọn: IP đầy đủ, dạng `203…58`, `113.58` hoặc chỉ `58`; tên nhà mạng đầy đủ hoặc viết tắt, hoặc hiện vị trí của IP thay cho nhà mạng. Rê chuột để xem IP đầy đủ.
 - **Cửa sổ chính**: mở như một ứng dụng bình thường, gồm tổng quan, thống kê trong ngày, biểu đồ số lần đổi IP 7 ngày và bảng lịch sử có tìm kiếm.
 - **Kiểm tra lại ngay**: phát hiện khi mất mạng rồi có mạng lại và kiểm tra ngay; ngoài ra kiểm tra định kỳ 3 phút một lần (có thể chỉnh). Tạm dừng khi Mac ngủ hoặc khóa màn hình.
 - **Loại kết nối**: "Wi-Fi · Đã kết nối", "Ethernet · Đã kết nối"…
@@ -109,6 +107,7 @@ Contact: [contact@lelong.dev](mailto:contact@lelong.dev)
 - **Lịch sử IP**: chỉ ghi khi IP thay đổi, kèm thời gian sử dụng từng IP và có đi qua VPN hay không. Tự xóa sau 6 giờ đến 1 tháng, có thể giới hạn số bản ghi, xuất ra CSV.
 - **IP quay lại**: báo khi bạn nhận lại một IP đã từng dùng (A → B → C → A).
 - **Popup khi đổi IP**: thông báo nhỏ hiện 1–5 giây, ở góc trên bên trái, giữa hoặc bên phải.
+- **Loại IP**: dân dụng, di động, trung tâm dữ liệu, VPN hay Tor.
 - **Độ tin cậy IP**: điểm rủi ro từ proxycheck.io, fFraud, ip-api.com hoặc StopForumSpam (không cần key), hoặc AbuseIPDB và IPQualityScore (API key miễn phí).
 - **IP nội bộ**: IPv4 / IPv6 theo từng cổng mạng.
 - **Cập nhật một chạm**: khi bạn đồng ý, app tự tải, kiểm tra và cài bản mới.
@@ -140,10 +139,6 @@ Chỉ cần làm một lần.
 - **Nhấn chuột phải**: làm mới, sao chép IP, cửa sổ chính, cài đặt, thoát.
 - Phím tắt: `⌘R` làm mới · `⌘O` cửa sổ chính · `⌘1` / `⌘2` chuyển tab · `⌘,` cài đặt.
 
-### Cài đặt mặc định
-
-Chạy cùng macOS · ngôn ngữ theo hệ thống · kiểm tra mỗi 3 phút, tạm dừng khi Mac ngủ hoặc khóa màn hình · hiện IP đầy đủ kèm tên chính của nhà mạng, ẩn logo · chỉ hiện IPv4 nội bộ · popup 2 giây ở giữa phía trên, có báo IP đã từng dùng · khi dùng VPN chỉ hiện IP VPN, bật nhận biết nhà cung cấp VPN và Tailscale · chấm điểm bằng proxycheck.io, có hiện nơi chấm điểm · lưu lịch sử 7 ngày, không giới hạn số bản ghi · tự kiểm tra cập nhật.
-
 ### Quyền riêng tư
 
 Quick IP Check không cần tài khoản, không thu thập thống kê và không có máy chủ riêng. App chỉ kết nối tới:
@@ -153,6 +148,7 @@ Quick IP Check không cần tài khoản, không thu thập thống kê và khô
 | Lấy IP công khai | api.ipify.org (dự phòng: icanhazip.com, checkip.amazonaws.com) | yêu cầu thông thường |
 | Nhà mạng và vị trí | ipinfo.io | IP công khai của bạn |
 | Điểm tin cậy (tùy chọn) | dịch vụ bạn chọn | IP công khai, chỉ khi IP thay đổi |
+| Loại IP (tùy chọn) | ip-api.com, fFraud, proxycheck.io | IP công khai, một lần cho mỗi IP mới |
 | Cập nhật (tùy chọn) | api.github.com, github.com | yêu cầu thông thường, mỗi ngày một lần; tải bản mới khi bạn đồng ý cập nhật |
 
 Việc nhận biết VPN diễn ra hoàn toàn trên máy bạn. Lịch sử và cài đặt chỉ lưu trên máy bạn (`~/Library/Application Support/IPCheck/`). API key được lưu trong Keychain của macOS.

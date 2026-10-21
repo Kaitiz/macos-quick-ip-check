@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.1.1 — 2026-10-21
+
+- Shows the IP type: residential, business, mobile, data center, VPN or Tor (combined from ip-api.com, fFraud and proxycheck.io; Settings → Reputation).
+- Option to show the IP's location (city and country code, or country name) instead of the ISP name in the menu bar (Settings → Display, off by default).
+- Local IPs name Tailscale as "Tailscale"; "VPN" is used only for a VPN that carries Internet traffic, other tunnels show as "Tunnel". The status label only says VPN when Internet actually goes through one.
+- Fixed the history table's column titles not lining up with the rows in the main window.
+
 ## 2.1 — 2026-10-21
 
 - Main window: open Quick IP Check like a regular app ("Open Window" in the menu bar panel, or the right-click menu), with the overview, today's stats, a 7-day chart of IP changes, and a searchable, filterable history table side by side. While it's open the app appears in the Dock.
