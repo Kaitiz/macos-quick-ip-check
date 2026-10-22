@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.2 — 2026-10-22
+
+- Uses less memory: the main window and Settings are released when closed instead of updating in the background.
+- Menu bar text updates once per check instead of once per changed value.
+- While the Internet is down, re-checks every 2 seconds for the first half minute, then less often during a long outage.
+
 ## 2.1.1 — 2026-10-21
 
 - Shows the IP type: residential, business, mobile, data center, VPN or Tor (combined from ip-api.com, fFraud and proxycheck.io; Settings → Reputation).
