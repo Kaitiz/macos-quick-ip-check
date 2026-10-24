@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.3 — 2026-10-24
+
+- Bug fixes.
+
 ## 2.1.2 — 2026-10-22
 
 - Uses less memory: the main window and Settings are released when closed instead of updating in the background.
